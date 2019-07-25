@@ -6,11 +6,6 @@ void Union(int *a, int b, int e)
 {
 	int m,s,f,j;
 	int *buf = new int[e+1];
-	
-	cout << endl << " !! " << endl;
-	for(int i = b; i < e+1; i++)
-		cout  << a[i] << " ";
-	cout << endl;
 	m = (b + e)/2;
 	s = b;
 	f = m + 1;
@@ -28,10 +23,6 @@ void Union(int *a, int b, int e)
 			f++;	
 		}
 	}
-	
-	for(j = b; j < e + 1; j++)
-		cout << buf [j] << " ";
-	cout  << "!!" << endl;
 	for(j = b; j < e +1; j++)
 		a[j] = buf[j];
 	
